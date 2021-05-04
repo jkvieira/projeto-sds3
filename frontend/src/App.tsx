@@ -6,7 +6,7 @@ import DonutChart from "components/DonutChart";
 
 function App() {
   return (
-     <> /**Reconhece todos os componentes como um único */
+     <> 
     <NavBar />
      <div className="container">
        <h1 className="text-primary py-3">Dashboard de Vendas</h1>
