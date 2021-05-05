@@ -1,4 +1,4 @@
-package com.devsuperior.dsvendas.entity;
+package com.devsuperior.dsvendas.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,13 +14,13 @@ import javax.persistence.Table;
 @Table(name= "tb_sellers")
 public class Seller {
   
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String name;
+	  @Id
+	  @GeneratedValue(strategy = GenerationType.IDENTITY)
+	  private Long id;
+	  private String name;
 	
-	@OneToMany(mappedBy="seller")
-	private List<Sale> sales= new ArrayList<>();
+	  @OneToMany(mappedBy="seller")
+	  private List<Sale> sales= new ArrayList<>();
 	
 	public Seller() {
 	
